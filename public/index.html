@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="js/app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nhewha Consulting</title>
+  </head>
+  <body class="bg-slate-100">
+    <nav class="container relative mx-auto p-6">
+      <!-- Flex Container For Nav Items -->
+      <div class="flex items-center justify-between space-x-20 my-6">
+        <!-- Logo -->
+        <div class="z-30">
+          <img
+            src="assets/Nhewha Consulting.png"
+            alt="logo"
+            class="w-40 h-40"
+          />
+        </div>
+        <!-- Menu Items -->
+        <div
+          class="hidden items-center space-x-10 uppercase text-primaryBlack md:flex"
+        >
+          <a href="#services" class="tracking-widest hover:text-primaryRed"
+            >Services</a
+          >
+          <a href="#about" class="tracking-widest hover:text-primaryRed"
+            >About</a
+          >
+          <a href="#pricing" class="tracking-widest hover:text-primaryRed"
+            >Pricing</a
+          >
+          <a href="#contact" class="tracking-widest hover:text-primaryRed"
+            >Contact</a
+          >
+        </div>
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu-mobile"
+        class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-amber-200"
+      >
+        <div class="w-full py-3 text-center">
+          <a href="#services" class="block hover:text-primaryRed">Services</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#about" class="block hover:text-primaryRed">About Us</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#pricing" class="block hover:text-primaryRed">Pricing</a>
+        </div>
+        <div class="w-full py-3 text-center">
+          <a href="#contact" class="block hover:text-primaryRed">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Container For Image and Copy -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+      >
+        <!-- Content -->
+        <div class="flex flex-col justify-between space-y-10 lg:mt-16 lg:w-1/2">
+          <h1 class="text-3xl font-bold text-center lg:text-6xl lg:text-left">
+            Affordable digital products that convert customers
+          </h1>
+          <p
+            class="mx-auto text-lg text-center text-primaryBlack lg:text-2xl lg:text-left lg:mx-0"
+          >
+            We are a digital agency that provides highly affordable web, mobile,
+            and application design services to small business owners so they can
+            improve the design of their digital presence, increase conversions
+            and make more sales.
+          </p>
+
+          <!-- CTA Button -->
+          <a
+            href="#"
+            class="p-4 text-2xl font-extrabold text-white text-center border-2 bg-primaryRed rounded-md shadow-xl border-primaryRed md:text-based hover:bg-white hover:text-primaryRed"
+            >Start your project today</a
+          >
+        </div>
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <img
+            src="assets/Hero Image.png"
+            alt=""
+            class="relative z-10 lg:top-24 lg:left-10 xl:top-0 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container flex flex-col mx-auto p-6 lg:mt-20">
+        <h1
+          class="text-3xl font-bold text-primaryBlack text-center lg:text-6xl"
+        >
+          Our Services
+        </h1>
+        <!-- Services Boxes container -->
+        <div
+          class="flex flex-col justify-around space-y-10 p-6 lg:flex-row lg:space-y-0 lg:space-x-10"
+        >
+          <!-- Box 1 -->
+          <div
+            class="flex flex-col space-y-6 p-6 border-2 items-center bg-white border-gray-300 rounded-xl shadow-xl lg:items-start lg:text-left lg:lg:w-1/3"
+          >
+            <img src="assets/WebIcon.png" alt="webIcon" class="w-16 h-16" />
+            <h2 class="text-xl font-bold text-primaryBlack">Web Design</h2>
+            <p class="text-base text-primaryBlack text-left">
+              We provide affordable web design packages to help you launch your
+              brand’s digital presence
+            </p>
+          </div>
+          <!-- Box 2 -->
+          <div
+            class="flex flex-col items-center space-y-6 p-6 border-2 bg-white border-gray-300 rounded-xl shadow-xl lg:items-start lg:w-1/3"
+          >
+            <img src="assets/UXUIIcon.png" alt="webIcon" class="w-16 h-16" />
+            <h2 class="text-xl font-bold text-left text-primaryBlack">
+              UX/UI Design
+            </h2>
+            <p class="text-base text-primaryBlack text-left">
+              We design systems that improve your customer experiences when when
+              engaging with your digital platforms
+            </p>
+          </div>
+          <!-- Box 3 -->
+          <div
+            class="flex flex-col items-center space-y-6 p-6 border-2 bg-white border-gray-300 rounded-xl shadow-xl lg:items-start lg:w-1/3"
+          >
+            <img src="assets/AppDevIcon.png" alt="webIcon" class="w-16 h-16" />
+            <h2 class="text-xl font-bold text-left text-primaryBlack">
+              App Development
+            </h2>
+            <p class="text-base text-primaryBlack text-left">
+              We develop custom web and mobile applications for your business,
+              campaigns or events to increase customer engagement
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about">
+      <div
+        class="container flex flex-col items-center justify-between p-6 mx-auto lg:flex-row"
+      >
+        <!-- Image -->
+        <img
+          src="assets/AboutImage.png"
+          alt="People working"
+          class="lg:w-1/2"
+        />
+        <!-- Content -->
+        <div class="flex flex-col p-6 space-y-6 items-center lg:w-1/2">
+          <h1
+            class="text-3xl font-bold text-primaryBlack text-center lg:text-6xl"
+          >
+            About Us
+          </h1>
+          <p class="text-based text-center text-primaryBlack lg:text-left">
+            We believe in the potential of small business to transform any
+            economy but to enable transformation at scale, these business need
+            to adopt digital technologies. <br /><br />Our mission is to help
+            guide small to medium business in their digital transformation
+            journey. From creating an digital presence to driving creating new
+            products and revenue streams enabled by digital platforms
+            <br /><br />Our deep expertise in human centered design enables us
+            to be a trusted partner and advisor to business owners as they
+            navigate their transformation journey.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Tables -->
+    <section id="pricing">
+      <div class="container flex flex-col p-6 mx-auto lg:mt-20">
+        <h1 class="text-3xl font-bold text-center lg:text-6xl">Web Packages</h1>
+
+        <!-- Container For tables -->
+        <div
+          class="flex flex-col justify-around items- center space-y-10 p-6 lg:flex-row lg:space-x-10 lg:space-y-0"
+        >
+          <!-- Table 1 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-4 border-2 bg-white border-gray-300 rounded-xl shadow-xl lg:w-1/3"
+          >
+            <!-- Heading -->
+            <div class="flex flex-col p-6 space-y-6 items-center">
+              <h3
+                class="text-lg font-bold tracking-wide text-center uppercase text-primaryBlack"
+              >
+                Start Up
+              </h3>
+              <h3
+                class="text-2xl font-bold tracking-wider uppercase text-center text-primaryBlack"
+              >
+                R1500
+              </h3>
+              <a
+                href="#"
+                class="text-center border-2 border-primaryRed text-primaryRed bg-white p-4 font-semibold hover:bg-primaryRed hover:text-white"
+                >Order Today</a
+              >
+              <hr class="w-28 h-2 content-center border-slate-200 mt-10" />
+            </div>
+
+            <!-- Details -->
+            <div class="flex flex-col items-center p-6 mt-4">
+              <p class="text-base text-primaryBlack text-center">
+                Up to 5 Sections
+              </p>
+              <p class="text-base text-primaryBlack text-center">
+                Domain Registration
+              </p>
+              <p class="text-base text-primaryBlack text-center">1 Email</p>
+              <p class="text-base text-primaryBlack text-center">
+                500 MB Storage
+              </p>
+              <p class="text-base text-primaryBlack text-center">
+                SSL Certificate
+              </p>
+              <p class="text-base text-primaryBlack text-center">
+                12 Months Hosting
+              </p>
+              <p class="text-base text-primaryBlack text-center mt-5">
+                Delivered in 3 days
+              </p>
+            </div>
+          </div>
+          <!-- Table 2 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-4 border-2 bg-primaryRed border-gray-300 rounded-xl shadow-xl lg:w-1/3"
+          >
+            <!-- Heading -->
+            <div class="flex flex-col p-6 space-y-6 items-center">
+              <h3
+                class="text-lg text-center font-bold tracking-wide uppercase text-white"
+              >
+                Small Business
+              </h3>
+              <h3
+                class="text-2xl font-bold tracking-wider uppercase text-white"
+              >
+                R3000
+              </h3>
+              <a
+                href="#"
+                class="border-2 border-white text-white p-4 font-semibold bg-primaryRed hover:bg-white hover:text-primaryRed"
+                >Order Today</a
+              >
+              <hr class="w-28 h-2 border-slate-200 mt-10" />
+            </div>
+
+            <!-- Details -->
+            <div class="flex flex-col items-center p-6 mt-4">
+              <p class="text-base text-white text-center">Up to 5 Pages</p>
+              <p class="text-base text-white text-center">
+                Domain Registration
+              </p>
+              <p class="text-base text-white text-center">1 Email</p>
+              <p class="text-base text-white text-center">1G Storage</p>
+              <p class="text-base text-white text-center">SSL Certificate</p>
+              <p class="text-base text-white text-center">12 Months Hosting</p>
+              <p class="text-base text-white text-center mt-5">
+                Delivered in 6 days
+              </p>
+            </div>
+          </div>
+          <!-- Table 3 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-4 border-2 bg-white border-gray-300 rounded-xl shadow-xl lg:w-1/3"
+          >
+            <!-- Heading -->
+            <div class="flex flex-col p-6 space-y-6 items-center">
+              <h3
+                class="text-lg text-center font-bold tracking-wide uppercase text-primaryBlack"
+              >
+                Medium Business
+              </h3>
+              <h3
+                class="text-2xl font-bold tracking-wider uppercase text-primaryBlack"
+              >
+                R8500
+              </h3>
+              <a
+                href="#"
+                class="border-2 border-primaryRed text-primaryRed p-4 font-semibold bg-white hover:bg-primaryRed hover:text-white"
+                >Order Today</a
+              >
+              <hr class="w-28 h-2 border-slate-200 mt-10" />
+            </div>
+
+            <!-- Details -->
+            <div class="flex flex-col items-center p-6 mt-4">
+              <p class="text-base text-primaryBlack text-center">
+                Up to 12 Pages
+              </p>
+              <p class="text-base text-primaryBlack text-center">
+                Domain Registration
+              </p>
+              <p class="text-base text-primaryBlack text-center">5 Email</p>
+              <p class="text-base text-primaryBlack text-center">1GB Storage</p>
+              <p class="text-base text-primaryBlack text-center">
+                SSL Certificate
+              </p>
+              <p class="text-base text-primaryBlack text-center">
+                12 Months Hosting
+              </p>
+              <p class="text-base text-primaryBlack text-center mt-5">
+                Delivered in 12 days
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <div class="container flex flex-col p-6 mx-auto lg:mt-20">
+        <!-- Section Header -->
+        <h1
+          class="text-3xl font-bold text-center text-primaryBlack lg:text-6xl"
+        >
+          Contact Us
+        </h1>
+        <!-- Contact Form and Contact Details -->
+        <div class="flex flex-col-reverse justify-around p-6 lg:flex-row">
+          <!-- Contact Details -->
+          <div
+            class="flex flex-col space-y-6 p-6 rounded-2xl bg-content-image lg:w-1/3 bg-no-repeat bg-cover bg-left-top lg:space-x-4"
+            style="
+              background-image: url('assets/Text\ Information\ background.png');
+            "
+          >
+            <h3 class="text-2xl font-bold text-center lg:text-left text-white">
+              Contact Information
+            </h3>
+            <p
+              class="text-xl font-semi-bold text-center text-white lg:text-left"
+            >
+              Fill in the information and our team will get back to you.
+            </p>
+            <!-- Contact Icons and Details  -->
+            <div
+              class="flex flex-col space-y-2 items-center mt-10 lg:items-start"
+            >
+              <!-- Telephone details -->
+              <div class="flex flex-row space-x-4 items-center">
+                <img src="assets/Phone.svg" class="w-8 h-8" alt="phoneIcon" />
+                <p class="text-base text-white">011 011 011</p>
+              </div>
+              <!-- Email details -->
+              <div class="flex flex-row space-x-4 items-center">
+                <img
+                  src="assets/Envelope Closed.svg"
+                  class="w-8 h-8"
+                  alt="phoneIcon"
+                />
+                <p class="text-base text-white">sales@nhewha.co.za</p>
+              </div>
+              <!-- Address details -->
+              <div class="flex flex-row space-x-4 items-center">
+                <img
+                  src="assets/Navigation.svg"
+                  class="w-8 h-8"
+                  alt="phoneIcon"
+                />
+                <p class="text-base text-white">
+                  8 Bergriver Drive<br />Terenue<br />Kempton Park
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Form container -->
+          <div
+            class="flex flex-col p-6 bg-white rounded-2xl mb-2 space-y-6 lg:w-2/3"
+          >
+            <!-- Form -->
+            <form
+              action="#"
+              class="flex flex-col items-start p-6"
+              id="contactForm"
+            >
+              <!-- Name Row -->
+              <div
+                class="flex flex-row justify-between space-x-10 w-full items-center mb-4"
+              >
+                <div class="group flex flex-col space-y-0 w-1/2">
+                  <label
+                    for="firstName"
+                    class="text-md group-focus-within:text-primaryRed text-gray-300 font-semibold mb-6"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-input border-0 border-b-2 border-slate-300 focus:ring-0 focus:border-primaryRed"
+                  />
+                </div>
+                <div class="group flex flex-col space-y-0 w-1/2">
+                  <label
+                    for="lastName"
+                    class="text-md group-focus-within:text-primaryRed text-gray-300 font-semibold focus:text-primaryRed mb-6"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-input border-0 border-b-2 border-slate-300 focus:ring-0 focus:border-primaryRed"
+                  />
+                </div>
+              </div>
+              <!-- Address and Email Row -->
+              <div
+                class="flex flex-row justify-between space-x-10 w-full items-center mb-4 mt-4"
+              >
+                <div class="group flex flex-col space-y-0 w-1/2">
+                  <label
+                    for="email"
+                    class="text-md group-focus-within:text-primaryRed text-gray-300 font-semibold mb-6"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-input border-0 border-b-2 border-slate-300 focus:ring-0 focus:border-primaryRed"
+                  />
+                </div>
+                <div class="group flex flex-col space-y-0 w-1/2">
+                  <label
+                    for="phone"
+                    class="text-md group-focus-within:text-primaryRed text-gray-300 font-semibold focus:text-primaryRed mb-6"
+                    >Phone</label
+                  >
+                  <input
+                    type="text"
+                    id="phone"
+                    class="form-input border-0 border-b-2 border-slate-300 focus:ring-0 focus:border-primaryRed"
+                  />
+                </div>
+              </div>
+              <!-- Services Row -->
+              <div
+                class="flex flex-col space-y-6 w-full items-center mb-4 mt-20 lg:items-start"
+              >
+                <h3 class="text-2xl font-semibold text-primaryBlack text-left">
+                  What services do you need?
+                </h3>
+                <div class="flex flex-row space-x-6 items-center">
+                  <div class="flex flex-row items-center space-x-4">
+                    <input
+                      type="checkbox"
+                      class="form-input rounded-xl border-2 border-slate-300 focus:ring-0 active:bg-primaryRed checked:bg-primaryRed"
+                      name="webDesign"
+                      id="webDesing"
+                    />
+                    <label
+                      for="webDesign"
+                      class="text-base text-primaryBlack font-semibold"
+                      >Web Design</label
+                    >
+                  </div>
+                  <div class="flex flex-row items-center space-x-4">
+                    <input
+                      type="checkbox"
+                      class="form-input rounded-xl border-2 border-slate-300 focus:ring-0 active:bg-primaryRed checked:bg-primaryRed"
+                      name="uxDesign"
+                      id="uxDesing"
+                    />
+                    <label
+                      for="uxDesign"
+                      class="text-base text-primaryBlack font-semibold"
+                      >UX/Ui Consulting</label
+                    >
+                  </div>
+                  <div class="flex flex-row items-center space-x-4">
+                    <input
+                      type="checkbox"
+                      class="form-input rounded-xl border-2 border-slate-300 focus:ring-0 active:bg-primaryRed checked:bg-primaryRed"
+                      name="webApp"
+                      id="webApp"
+                    />
+                    <label
+                      for="webApp"
+                      class="text-base text-primaryBlack font-semibold"
+                      >Web Application</label
+                    >
+                  </div>
+                  <div class="flex flex-row items-center space-x-4">
+                    <input
+                      type="checkbox"
+                      class="form-input rounded-xl border-2 border-slate-300 focus:ring-0 active:bg-primaryRed checked:bg-primaryRed"
+                      name="mobileApp"
+                      id="mobileApp"
+                    />
+                    <label
+                      for="mobailApp"
+                      class="text-base text-primaryBlack font-semibold"
+                      >Mobile Application</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Message Row-->
+              <div
+                class="flex flex-col space-y-6 w-full items-center mb-10 mt-20 lg:items-start"
+              >
+                <h3 class="text-2xl font-semibold text-primaryBlack text-left">
+                  Message
+                </h3>
+
+                <textarea
+                  name=""
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message..."
+                  class="mt-10 placeholder:text-gray-400 border-0 border-b-2 border-slate-300 focus:ring-0 focus:border-primaryRed w-full"
+                ></textarea>
+              </div>
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="p-6 bg-primaryRed text-white font-semibold text-2xl rounded-xl shadow-xl lg:self-end"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-primaryYellow opacity-80">
+      <!-- Footer Flex Container -->
+      <div
+        class="flex flex-col p-6 justify-around items-center space-y-6 lg:flex-row lg:space-y-0 lg:space-x-20"
+      >
+        <!-- Logo -->
+        <div class="lg:w-1/3">
+          <img
+            src="assets/Nhewha Consulting.png"
+            alt="logo"
+            class="w-36 h-36"
+          />
+        </div>
+        <!-- Menu -->
+        <nav class="flex flex-col space-y-6 items-center lg:w-1/3">
+          <a
+            href="#services"
+            class="text-2xl text-primaryBlack font-semibold text-center lg:text-left hover:text-primaryRed"
+            >Services</a
+          >
+          <a
+            href="#about"
+            class="text-2xl text-primaryBlack font-semibold text-center lg:text-left hover:text-primaryRed"
+            >About Us</a
+          >
+          <a
+            href="#pricing"
+            class="text-2xl text-primaryBlack font-semibold text-center lg:text-left hover:text-primaryRed"
+            >Pricing</a
+          >
+          <a
+            href="#contact"
+            class="text-2xl text-primaryBlack font-semibold text-center lg:text-left hover:text-primaryRed"
+            >Contact Us</a
+          >
+        </nav>
+        <!-- Social icons -->
+        <div
+          class="flex flex-row items-center justify-around mx-auto space-x-20 lg:w-1/3"
+        >
+          <img src="assets/facebook (1).png" alt="" />
+          <img src="assets/facebook (2).png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
